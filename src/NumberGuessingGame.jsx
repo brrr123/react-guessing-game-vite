@@ -24,7 +24,7 @@ const NumberGuessingGame = () => {
       isCorrectGuess || numberOfGuesses === MAX_ATTEMPTS;
 
   const handleGuess = (guess) => {
-    setLatestGuess(guess);
+    setLatestGuess(Number(guess));
     setNumberOfGuesses(numberOfGuesses + 1);
   }
   const handleReset = () => {
